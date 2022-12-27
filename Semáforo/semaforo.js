@@ -8,7 +8,7 @@ let automatico = document.getElementById('automatico')
 
 
 function red () {
-sinal.src = "Imagens/red.png"
+sinal.src = "imagens/red.png"
 const audio = new Audio('click.mp3')
 audio.play();
 
