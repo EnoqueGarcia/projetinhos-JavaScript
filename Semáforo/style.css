@@ -1,0 +1,49 @@
+
+
+@font-face {
+    font-family: 'boston';
+    src: url('fonte/boston.ttf') format('opentype');
+   
+}
+
+body {
+    background: url('transito.jpg');
+    background-size: cover;
+   font-family: 'boston';
+   font-size: 2em;
+   text-align: center;
+   color: aliceblue;
+
+    
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+   
+}
+
+
+button#red:hover {
+    background-color: rgb(207, 13, 13);
+    color: black;
+}
+
+button#yellow:hover {
+    background-color: rgb(255, 251, 10);
+    color: black;
+}
+
+button#green:hover {
+    background-color: rgb(26, 155, 14);
+    color:black
+}
+
+button#automatico:hover{
+    background-color: aliceblue;
+    color: black;
+}
