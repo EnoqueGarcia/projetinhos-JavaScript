@@ -30,6 +30,13 @@ function lampBroken (){
   lamp.src = "Imagens/quebrada.jpg"
   const audio = new Audio('quebrando.mp3')
   audio.play();
+  setTimeout(function(){
+
+    alert('Olhe o que você fez! agora a lâmpada está quebrada. Recarregue a página pois ela não ligará mais desse jeito.')
+
+}, 1000)
+
+  
 return
 } 
 
