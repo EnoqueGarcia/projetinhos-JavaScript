@@ -8,20 +8,20 @@ let automatico = document.getElementById('automatico')
 
 
 function red () {
-sinal.src = "Imagens/red.png"
+	sinal.src = "red.png"
 const audio = new Audio('click.mp3')
 audio.play();
 
 }
 
 function yellow () {
-sinal.src = "Imagens/yellow.png"
+sinal.src = "yellow.png"
 const audio = new Audio('click.mp3')
 audio.play();
 }
 
 function green () {
-sinal.src = "Imagens/green.png"
+sinal.src = "green.png"
 const audio = new Audio('click.mp3')
 audio.play();
 
@@ -32,19 +32,19 @@ function changecolor () {
 
 setInterval(() => {
 	if(contador <= 1) {
-		sinal.src = "Imagens/red.png"
+		sinal.src = "red.png"
         const audio = new Audio('click.mp3')
 audio.play();
 	} else if (contador === 5) {
-		sinal.src = "Imagens/yellow.png"
+		sinal.src = "yellow.png"
         const audio = new Audio('click.mp3')
 audio.play();
 	} else if (contador === 10) {
-        sinal.src = "Imagens/green.png"
+        sinal.src = "green.png"
         const audio = new Audio('click.mp3')
 audio.play();
 	} else if (contador === 15) {
-		sinal.src = "Imagens/off.png";
+		sinal.src = "off.png";
 		contador = 0;
 	}
 	
