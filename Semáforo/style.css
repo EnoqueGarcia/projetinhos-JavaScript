@@ -9,6 +9,7 @@
 body {
     background: url('transito.jpg');
     background-size: cover;
+    background-attachment: fixed;
    font-family: 'boston';
    font-size: 2em;
    text-align: center;
