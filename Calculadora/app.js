@@ -8,6 +8,8 @@ audio.play();
 
 }
 
+
+
 function clean() {
     document.getElementById('resultado').innerHTML = ''
     const audio = new Audio('bip.mp3')
