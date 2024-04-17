@@ -10,21 +10,78 @@
 </head>
 <body>
     <header>
-        <h1>VANILLA JS</h1>
-        <h3>(clicar duas vezes na lampada pode ter consequências..)</h3>
+        <h1>Lâmpada</h1>
+        <h3>(clicar duas vezes na lâmpada pode haver consequências..)</h3>
     </header>
     
     <main>
         <div>
-            <img src="Imagens/desligada.jpg" alt="desligada" id="lamp">
+            <img src="Imagens/desligada.jpg" alt="desligada" id="lamp" ondblclick="broken()">
         </div>
         <div>
-        <button id="turnOn">Ligar</button>
-        <button id="turnOff">Desligar</button>
+        <button onclick="turnOn()">Ligar</button>
+        <button onclick="turnOff()">Desligar</button>
         </div>
         <script src="lampada.js"></script>
       
     </main> 
-    
+    <script>
+let img = document.getElementById('lamp');
+let isBroken = false;
+
+function turnOn(){
+
+    if(!isBroken){
+
+        img.src = "./Imagens/ligada.jpg"
+
+
+    }
+
+    const audio = new Audio('interruptor som.mp3')
+audio.play();
+
+
+
+}
+
+function turnOff(){
+
+if(!isBroken){
+
+    img.src = "./Imagens/desligada.jpg"
+  
+
+
+}
+const audio = new Audio('interruptor som.mp3')
+audio.play();
+
+
+
+}
+
+
+
+
+function broken(){
+    img.src = "./Imagens/quebrada.jpg"
+    const audio = new Audio('quebrando.mp3')
+  audio.play();
+  // mensagem com tempo
+
+  setTimeout(function(){
+
+alert('Olhe o que você fez! agora a lâmpada está quebrada. Recarregue a página pois ela não ligará mais desse jeito.')
+
+}, 2000)
+
+  isBroken = true; // define que lampada quebrou
+  // removendo os eventos abaixo: 
+
+  img.removeAttribute('ondblclick')
+}
+
+    </script>
 </body>
 </html>
