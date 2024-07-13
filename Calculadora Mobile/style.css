@@ -45,6 +45,7 @@ margin: 2px;
 
 .botao:hover{
     background-color: rgb(41, 40, 40);
+    transform: scale(0.96);
 }
 
 #resultado {
@@ -88,12 +89,27 @@ border-radius: 25px;
 background-color: rgba(255, 81, 0, 0.795);
 
 }
+
+
+
 #ex:hover{
 
   
     background-color: rgba(160, 54, 4, 0.795);
     
     }
+
+
+    #ex2{
+
+        border-radius: 25px;
+        background-color: rgb(77, 75, 75);
+        
+        }
+        
+#ex2:hover{
+    background-color: rgb(41, 40, 40);
+}
 
 #cinza1 {
 
